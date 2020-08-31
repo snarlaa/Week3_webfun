@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+        <Script>
+        $(document).ready(function(){
+            $('.click').click(function(){
+                alert('welcome to my page')
+            })
+            $('.hide').click(function(){
+                $(".hide").hide()
+            })
+            $('.show').click(function(){
+                $(".hide").show()
+            })
+            $('.toggle').click(function(){
+                $(".hide").toggle()
+            })
+            $('.toggle').click(function(){
+                $(".hide").toggle()
+            })
+            $('#slideup').click(function(){
+                $("#image1").slideUp()
+            })
+            $('#slideDown').click(function(){
+                $("#image1").slideDown()
+            })
+            $('#slideToggle').click(function(){
+                $("#image1").slideToggle()
+            })
+            $('#fadeOut').click(function(){
+                $("#image2").fadeOut(8000)
+            })
+            $('#fadeIn').click(function(){
+                $("#image2").fadeIn(8000)
+                    //Animation complete
+            })
+            $("#append").click(function(){
+                $('h4').append("<p>Hello Zombie</p>")
+                
+            })
+            $("#before").click(function(){
+                $('h3').before("<p>Hello Zombie</p>")
+            })
+            $("#html").click(function(){
+                $('h5').html("<b>Wow!!!</b>")
+            })
+            $("#attr").click(function(){
+                $('img id').attr("alt","fantastic image.png")
+            })
+    });
+    </Script>
+</head>
+<body>
+    <fieldset>
+        <legend>Click me!</legend>
+        <p> add a function click</p>
+        <button class='click'>click</button>
+    </fieldset>
+    <fieldset>
+        <legend>Hide!</legend>
+        <p> Hide this paragrph upon clicking</p>
+        <button class='hide'>click to hide this button</button>
+    </fieldset>
+    <fieldset>
+        <legend>Show!</legend>
+        <p> show this paragrph upon clicking</p>
+        <button class='show'>click to show this button</button>
+    </fieldset>
+    <fieldset>
+        <legend>Toggle</legend>
+        <p> Toggle this picture</p>
+        <button class='toggle'>click to toggle this button</button>
+    </fieldset>
+    <fieldset>
+        <legend>slideup</legend>
+        <img id ="image1" img src="D:/Users/narlas/cdojo/Pictures/image1.jpg" alt="image1.png">
+        <button id="slideup">click to slideup button</button>
+    </fieldset>
+    <fieldset>
+        <legend>slideDown</legend>
+        <!-- <p class="hidden" hidden> I was hiding</p> -->
+        <button id="slideDown">click to slidedown button</button>
+    </fieldset>
+    <fieldset>
+        <legend>slideToggle</legend>
+        <!-- <p class="show" hidden> I was hiding</p> -->
+        <button id="slideToggle">click to Toggle button</button>
+    </fieldset>
+    <fieldset>
+        <legend>fadeout</legend>
+        <p>shows element with a fade out animation</p>
+		<img id="image2" img src="D:/Users/narlas/cdojo/Pictures/image2.jpg" alt="image2.png">
+        <button id ="fadeOut">click to fadeout button</button>
+    </fieldset>
+    <fieldset>
+        <legend>fadeIn</legend>
+        <p>shows element with a fade In animation</p>
+		<img id="image2" img src="D:/Users/narlas/cdojo/Pictures/image2.jpg" alt="image2.png">
+        <button id ="fadeIn">click to fadeIn button</button>
+    </fieldset>
+    <fieldset>
+        <legend>addclass</legend>
+        <p>adding a class</p>
+        <button id ="addclass">click to addclass button</button>
+    </fieldset>
+    <fieldset>
+        <legend>append</legend>
+        <p>append</p>
+        <h4>add me </h4>
+        <button id ="append">click to append </button>
+    </fieldset>
+    <fieldset>
+        <legend>before</legend>
+        <h3>add above this h3 as well</h3>
+        <button id ="before">click to add before </button>
+    </fieldset>
+    <fieldset>
+        <legend>html</legend>
+        <h5>Log thhis</h5>
+        <button id ="html">click on html </button>
+    </fieldset>
+    <fieldset>
+        <legend>attribute</legend>
+        <h6>Log thhis</h6>
+        <img id="image3" img src="D:/Users/narlas/cdojo/Pictures/image3.jpg" alt="image2.png">
+        <button id ="attr">get the attribute </button>
+    </fieldset>
+</body>
+</html>
